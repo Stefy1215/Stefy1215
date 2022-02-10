@@ -1,0 +1,272 @@
+body{ width: 100%;
+    height: 100%;}
+    
+    /*.............Desktop............*/
+    @media (min-width: 1024px){
+    #body {
+        background-color: rgb(255, 252, 248);
+        display: grid;
+        grid-template-areas: "icono icono icono" "menu menu menu"
+        "cuerpo cuerpo cuerpo" "footer footer footer" ;}
+    
+    .icono {grid-area: icono; background-color: rgb(255, 252, 248); }
+    .menu {grid-area: menu; background-color: rgb(0, 0, 0);}
+    .cuerpo {grid-area: cuerpo;}
+    .footer {grid-area: footer;}
+    
+    /*-------Menu--------*/
+    
+    ul {
+        color:rgb(0, 0, 0);
+        font-size: 90%;
+        line-height: 2;
+        text-decoration: none;}
+    
+    ol {
+        color:rgb(255, 252, 248);
+        font-size: 90%;
+        list-style-type:upper-roman;
+        font-family: 'PT Sans', sans-serif;
+          }
+    
+    ul li { 
+    display: inline;
+    border: solid 2px rgb(207, 207, 207);
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(255, 252, 248);}
+    
+    /* ------------- */
+    /*Configuracion Index*/
+        
+    .imagen {
+        width: 650px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 5px;
+    
+    }
+    
+    /*Configuracion de Index, Historia y Tipos*/
+    
+    article p{ font-family:sans-serif;
+        font-size: 8px;
+        word-spacing: 10px;
+        line-height: 18px;
+    }
+    
+    h1{ font-family:sans-serif;
+        text-decoration: overline;
+        color:rgb(109, 109, 108);
+        font-size: 14px;
+        word-spacing: 13px;
+        line-height: 13px;  }
+    
+    p{text-align: start;
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        font-size: 8px;
+        background-color: rgb(255, 252, 248);
+        border-top-width: 8px;
+        border-right-width: 8px;
+        border-bottom-width: 8px;
+        border-left-width: 8px;}
+    
+    /*Configuracion Carta y Metodos*/
+    
+    section      {
+        width: 1000;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 700;}
+    
+    .myc:hover {
+        transform: scale(1.05);
+        transition-duration: 0.7s;}
+    
+    /* ---------- */
+    
+    footer { font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        text-align: center;
+        color: rgb(58, 58, 58);
+        font-size: 15px;}
+    }
+        
+    /*-------------Tablet!--------------*/
+    @media (max-width: 1023px) and (min-width: 480px){
+        #body {
+            background-color: rgb(255, 252, 248);
+            display: grid;
+            grid-template-areas: "icono icono icono" "menu menu menu"
+            "cuerpo cuerpo cuerpo" "footer footer footer" ;}
+        
+        .icono {grid-area: icono; background-color: rgb(255, 252, 248); }
+        .menu {grid-area: menu; background-color: rgb(0, 0, 0);}
+        .cuerpo {grid-area: cuerpo;}
+        .footer {grid-area: footer;}
+        
+        /*-------Menu--------*/
+        
+        ul {
+            color:rgb(0, 0, 0);
+            font-size: 90%;
+            line-height: 2;
+            text-decoration: none;}
+        
+        ol {
+            color:rgb(255, 252, 248);
+            font-size: 90%;
+            list-style-type:upper-roman;
+            font-family: 'PT Sans', sans-serif;
+              }
+        
+        ul li { 
+        display: inline;
+        border: solid 2px rgb(207, 207, 207);
+        margin: 5px;
+        padding: 10px;
+        background-color: rgb(255, 252, 248);}
+        
+        /* ------------- */
+        /*Configuracion Index*/
+            
+        .imagen {
+            width: 650px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding: 5px;}
+        
+        /*Configuracion de Index, Historia y Tipos*/
+        
+        article p{ font-family:sans-serif;
+            font-size: 8px;
+            word-spacing: 10px;
+            line-height: 18px;
+        }
+        
+        h1{ font-family:sans-serif;
+            text-decoration: overline;
+            color:rgb(109, 109, 108);
+            font-size: 13px;
+            word-spacing: 13px;
+            line-height: 13px;  }
+        
+        p{text-align: start;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            background-color: rgb(255, 252, 248);}
+        
+        /*Configuracion Carta y Metodos*/
+        
+        section      {
+            width: 1000;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 700;}
+    
+        .myc:hover {
+            transform: scale(1.05);
+            transition-duration: 0.7s;}
+        
+        /* ---------- */
+        
+        footer { font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            text-align: center;
+            color: rgb(58, 58, 58);
+            font-size: 15px;}
+        }
+    
+    /*..............Mobile...............*/
+    @media (min-width: 480px) and (max-width: 560 ){
+       #body {
+            background-color: rgb(255, 252, 248)0;
+            display: grid;
+            grid-template-areas: "icono " "menu "
+            "cuerpo" "footer" ;}
+        
+        .icono {grid-area: icono; background-color: rgb(255, 252, 248); }
+        .menu {grid-area: menu; background-color: rgb(0, 0, 0);}
+        .cuerpo {grid-area: cuerpo;}
+        .footer {grid-area: footer;}
+        
+        /*-------Menu--------*/
+        
+        ul {
+            color:rgb(207, 207, 207);
+            font-size: 90%;
+            line-height: 2;
+            text-decoration: none;}
+        
+        ol {
+            color:rgb(255, 252, 248);
+            font-size: 90%;
+            list-style-type:upper-roman;
+            font-family: 'PT Sans', sans-serif;
+              }
+        
+        ul li { 
+        display: inline;
+        border: solid 2px rgb(233, 197, 79);
+        margin: 5px;
+        padding: 10px;
+        background-color: rgb(255, 252, 248);}
+        
+        /* ------------- */
+        /*Configuracion Index*/
+            
+        .imagen {
+            width: 20%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        
+        /*Configuracion de Index, Historia y Tipos*/
+        
+        article p{ font-family:sans-serif;
+            font-size: 8px;
+            word-spacing: 10px;
+            line-height: 18px;
+        }
+        
+        h1{ font-family:sans-serif;
+            text-decoration: overline;
+            color:rgb(109, 109, 108);
+            font-size: 13px;
+            word-spacing: 13px;
+            line-height: 13px;  }
+        
+        p{text-align: start;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            font-size: 8px;
+            background-color: rgb(243, 226, 203);
+            border-top-width: 8px;
+            border-right-width: 8px;
+            border-bottom-width: 8px;
+            border-left-width: 8px;}
+        
+        /*Configuracion Carta y Metodos*/
+        
+        section      {
+            width: 1000;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 700;}
+        
+        .myc:hover {
+            transform: scale(1.05);
+            transition-duration: 0.7s;}   
+        /* ---------- */
+        
+        footer { font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            text-align: center;
+            color: rgb(58, 58, 58);
+            font-size: 15px;}
+        }
