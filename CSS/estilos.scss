@@ -7,4 +7,34 @@ body{ width: 100%;
         @import "tablet";
         @import "desktop";
 
+$tamaño-letraH1:(
+    letra-grande:17px,
+    letra-mediana:13px,
+    letra-chica:14px,
+);
+
+footer {
+    font-size: map-get($tamaño-letraH1, letra-chica);}
+
+article p { 
+@extend p ;
+border-top-width: 8px;
+border-right-width: 8px;
+border-bottom-width: 8px;
+border-left-width: 8px;
+}
+
+@mixin tipografia {
+    font-family:sans-serif;}
+
+li {@include tipografia;}
+
+
+
+
+
+
+
+
+
 

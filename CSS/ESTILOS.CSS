@@ -84,7 +84,7 @@ body {
     word-spacing: 13px;
     line-height: 13px;
   }
-  p {
+  p, article p {
     text-align: start;
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -206,7 +206,7 @@ body {
     word-spacing: 13px;
     line-height: 13px;
   }
-  p {
+  p, article p {
     text-align: start;
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -324,7 +324,7 @@ body {
     word-spacing: 13px;
     line-height: 13px;
   }
-  p {
+  p, article p {
     text-align: start;
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -360,5 +360,20 @@ body {
     color: #3a3a3a;
     font-size: 15px;
   }
+}
+
+footer {
+  font-size: 14px;
+}
+
+article p {
+  border-top-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 8px;
+  border-left-width: 8px;
+}
+
+li {
+  font-family: sans-serif;
 }
 /*# sourceMappingURL=estilos.css.map */
